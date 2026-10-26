@@ -1,0 +1,292 @@
+{
+  "admins": [
+    {
+      "id": "adm-1",
+      "name": "Rafael Bank (Principal)",
+      "email": "rafaelbank2020@gmail.com",
+      "passwordHash": "admin123",
+      "role": "superadmin",
+      "permissions": [
+        "all",
+        "manage_clients",
+        "manage_payments",
+        "manage_tokens",
+        "manage_settings",
+        "manage_market_api"
+      ],
+      "createdAt": "2026-01-10T10:00:00Z",
+      "lastLogin": "2026-10-25T19:31:43.584Z"
+    },
+    {
+      "id": "adm-2",
+      "name": "Co-Administrador Suporte",
+      "email": "suporte@tradevision.ai",
+      "passwordHash": "suporte123",
+      "role": "admin",
+      "permissions": [
+        "manage_clients",
+        "manage_payments",
+        "view_reports"
+      ],
+      "createdAt": "2026-02-01T14:30:00Z",
+      "lastLogin": "2026-10-24T19:31:43.584Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "cli-1",
+      "name": "Rafael Silva",
+      "email": "rafaelbank2020@gmail.com",
+      "accessCode": "TV-8821",
+      "status": "Assinatura ativa",
+      "subscriptionExpiresAt": "2026-11-22T19:31:43.584Z",
+      "createdAt": "2026-10-01T10:00:00Z",
+      "notes": "Cliente VIP desde o lançamento.",
+      "trades": [
+        {
+          "id": "t-1",
+          "date": "25/10/2026",
+          "time": "09:15",
+          "asset": "EUR/USD",
+          "timeframe": "M5",
+          "stake": 10,
+          "direction": "CALL",
+          "result": "WIN",
+          "profit": 8.5,
+          "payoutPercent": 85
+        },
+        {
+          "id": "t-2",
+          "date": "25/10/2026",
+          "time": "09:42",
+          "asset": "GBP/USD",
+          "timeframe": "M5",
+          "stake": 10,
+          "direction": "PUT",
+          "result": "WIN",
+          "profit": 8.5,
+          "payoutPercent": 85
+        },
+        {
+          "id": "t-3",
+          "date": "25/10/2026",
+          "time": "10:05",
+          "asset": "USD/JPY",
+          "timeframe": "M1",
+          "stake": 10,
+          "direction": "CALL",
+          "result": "LOSS",
+          "profit": -10,
+          "payoutPercent": 85
+        },
+        {
+          "id": "t-4",
+          "date": "25/10/2026",
+          "time": "10:25",
+          "asset": "EUR/USD",
+          "timeframe": "M5",
+          "stake": 10,
+          "direction": "CALL",
+          "result": "WIN",
+          "profit": 8.5,
+          "payoutPercent": 85
+        },
+        {
+          "id": "t-5",
+          "date": "25/10/2026",
+          "time": "11:10",
+          "asset": "BTC/USDT",
+          "timeframe": "M15",
+          "stake": 10,
+          "direction": "PUT",
+          "result": "WIN",
+          "profit": 8.5,
+          "payoutPercent": 85
+        }
+      ]
+    },
+    {
+      "id": "cli-2",
+      "name": "Lucas Mendes",
+      "email": "lucas.trader@gmail.com",
+      "accessCode": "TV-4412",
+      "status": "Em teste",
+      "trialStartedAt": "2026-10-25T19:31:43.584Z",
+      "trialExpiresAt": "2026-10-26T15:31:43.584Z",
+      "createdAt": "2026-10-25T19:31:43.584Z",
+      "notes": "Cadastrou via link de indicação.",
+      "trades": [
+        {
+          "id": "t-6",
+          "date": "25/10/2026",
+          "time": "10:30",
+          "asset": "EUR/USD",
+          "timeframe": "M5",
+          "stake": 7.5,
+          "direction": "CALL",
+          "result": "WIN",
+          "profit": 6.38,
+          "payoutPercent": 85
+        },
+        {
+          "id": "t-7",
+          "date": "25/10/2026",
+          "time": "11:00",
+          "asset": "GBP/USD",
+          "timeframe": "M5",
+          "stake": 7.5,
+          "direction": "PUT",
+          "result": "WIN",
+          "profit": 6.38,
+          "payoutPercent": 85
+        }
+      ]
+    },
+    {
+      "id": "cli-3",
+      "name": "Carla Duarte",
+      "email": "carla.invest@hotmail.com",
+      "accessCode": "TV-7731",
+      "status": "Aguardando pagamento",
+      "trialExpiresAt": "2026-10-25T17:31:43.584Z",
+      "createdAt": "2026-10-24T19:31:43.584Z",
+      "notes": "Solicitou renovação de 30 dias pelo Telegram.",
+      "trades": [
+        {
+          "id": "t-8",
+          "date": "24/10/2026",
+          "time": "14:20",
+          "asset": "EUR/USD",
+          "timeframe": "M5",
+          "stake": 15,
+          "direction": "CALL",
+          "result": "WIN",
+          "profit": 12.75,
+          "payoutPercent": 85
+        },
+        {
+          "id": "t-9",
+          "date": "24/10/2026",
+          "time": "15:10",
+          "asset": "USD/JPY",
+          "timeframe": "M5",
+          "stake": 15,
+          "direction": "PUT",
+          "result": "LOSS",
+          "profit": -15,
+          "payoutPercent": 85
+        }
+      ]
+    },
+    {
+      "id": "cli-4",
+      "name": "Bruno Ferreira",
+      "email": "bruno.fx@outlook.com",
+      "accessCode": "TV-1209",
+      "status": "Expirado",
+      "trialExpiresAt": "2026-10-25T17:31:43.584Z",
+      "createdAt": "2026-10-20T12:00:00Z",
+      "notes": "Teste grátis de 24h finalizado.",
+      "trades": []
+    },
+    {
+      "id": "cli-5",
+      "name": "Marcos Lima",
+      "email": "marcos.lima@gmail.com",
+      "accessCode": "TV-5582",
+      "status": "Bloqueado",
+      "createdAt": "2026-10-15T09:00:00Z",
+      "notes": "Bloqueado por tentativa de violação de termos.",
+      "trades": []
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1",
+      "clientId": "cli-3",
+      "clientName": "Carla Duarte",
+      "clientEmail": "carla.invest@hotmail.com",
+      "clientCode": "TV-7731",
+      "amount": 29.9,
+      "date": "2026-10-25T19:06:43.584Z",
+      "status": "Pendente",
+      "method": "Telegram PIX",
+      "transactionRef": "PIX-E8921-TELEGRAM",
+      "adminNotes": "Comprovante recebido no canal de atendimento.",
+      "periodDaysGranted": 30
+    },
+    {
+      "id": "pay-2",
+      "clientId": "cli-1",
+      "clientName": "Rafael Silva",
+      "clientEmail": "rafaelbank2020@gmail.com",
+      "clientCode": "TV-8821",
+      "amount": 29.9,
+      "date": "2026-10-01T10:15:00Z",
+      "status": "Confirmado",
+      "method": "Telegram PIX",
+      "transactionRef": "PIX-77491-CONFIRMADO",
+      "confirmedBy": "Rafael Bank (Principal)",
+      "confirmedAt": "2026-10-01T10:18:00Z",
+      "adminNotes": "Assinatura inicial liberada.",
+      "periodDaysGranted": 30
+    }
+  ],
+  "tokens": [
+    {
+      "id": "tok-1",
+      "tokenCode": "TV-VIP-30D",
+      "durationDays": 30,
+      "maxUses": 10,
+      "currentUses": 2,
+      "expiresAt": "2026-12-31T23:59:59Z",
+      "isRevoked": false,
+      "createdAt": "2026-10-01T00:00:00Z",
+      "notes": "Token VIP de boas vindas"
+    },
+    {
+      "id": "tok-2",
+      "tokenCode": "TV-PROMO-7D",
+      "durationDays": 7,
+      "maxUses": 50,
+      "currentUses": 14,
+      "expiresAt": "2026-11-30T23:59:59Z",
+      "isRevoked": false,
+      "createdAt": "2026-10-15T00:00:00Z",
+      "notes": "Campanha Telegram 7 Dias"
+    }
+  ],
+  "settings": {
+    "telegramUsername": "@tradevision_oficial",
+    "telegramLink": "https://t.me/tradevision_oficial",
+    "paymentInstructions": "Chave PIX: financeiro@tradevision.ai (Banco Inter). Envie o comprovante e seu e-mail pelo nosso Telegram para liberação imediata!",
+    "paymentMessage": "Olá! Acabei de realizar o pagamento da assinatura Trade Vision IA (R$ 29,90) e solicito a liberação do meu acesso.",
+    "subscriptionPrice": 29.9,
+    "subscriptionDurationDays": 30,
+    "marketApiKey": "tv_live_sec_99a818c47b92e",
+    "marketApiProvider": "TradingView Realtime Data Feeds",
+    "marketApiStatus": "connected",
+    "defaultProfitGoalPercent": 10,
+    "defaultLossLimitPercent": 6,
+    "defaultStakePercent": 2.5,
+    "defaultMaxTradesPerDay": 5
+  },
+  "auditLogs": [
+    {
+      "id": "log-1",
+      "adminId": "adm-1",
+      "adminName": "Rafael Bank",
+      "action": "LIBERAÇÃO_ASSINATURA",
+      "details": "Liberado acesso de 30 dias para Rafael Silva (TV-8821).",
+      "timestamp": "2026-10-01T10:18:00Z"
+    },
+    {
+      "id": "log-2",
+      "adminId": "adm-1",
+      "adminName": "Rafael Bank",
+      "action": "GERAÇÃO_TOKEN",
+      "details": "Gerado token TV-VIP-30D para 10 utilizações.",
+      "timestamp": "2026-10-01T11:00:00Z"
+    }
+  ]
+}

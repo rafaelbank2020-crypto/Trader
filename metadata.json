@@ -1,0 +1,6 @@
+{
+  "name": "Studio Workspace",
+  "description": "Plataforma e ambiente moderno para criação rápida de aplicações web e dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
